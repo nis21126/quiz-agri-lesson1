@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบทดสอบวัดความรู้</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <!-- หน้าลงทะเบียน -->
+        <div id="start-screen" class="screen active">
+            <h1>แบบทดสอบประเมินความรู้</h1>
+            <p>กรุณากรอกข้อมูลก่อนเริ่มทำแบบทดสอบ (15 ข้อ)</p>
+            <input type="text" id="student-id" placeholder="รหัสนิสิต/นักศึกษา" required>
+            <input type="text" id="student-name" placeholder="ชื่อ-นามสกุล" required>
+            <button onclick="startQuiz()">เริ่มทำแบบทดสอบ</button>
+        </div>
+
+        <!-- หน้าคำถาม -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <span id="question-number">ข้อที่ 1/15</span>
+            </div>
+            <h2 id="question-text">ข้อความคำถามจะปรากฏที่นี่</h2>
+            <div id="options-container" class="options-grid"></div>
+            <button id="next-btn" onclick="nextQuestion()" disabled>ข้อถัดไป</button>
+        </div>
+
+        <!-- หน้าจบการทำแบบทดสอบ -->
+        <div id="end-screen" class="screen">
+            <h2>บันทึกคำตอบเรียบร้อยแล้ว</h2>
+            <p>ระบบได้ทำการส่งผลคะแนนไปยังผู้สอนเรียบร้อยแล้ว ขอบคุณครับ/ค่ะ</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
