@@ -66,3 +66,30 @@ button:disabled { background-color: #475569; cursor: not-allowed; }
     border-color: #38bdf8;
     background-color: #1e3a8a;
 }
+.end-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-success {
+    font-size: 50px;
+    color: #10b981;
+    margin-bottom: 15px;
+}
+
+.end-card h2 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.end-card p {
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sub-text {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-top: 15px;
+}
