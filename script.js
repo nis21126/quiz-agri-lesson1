@@ -216,8 +216,8 @@ function submitResults() {
     document.getElementById("quiz-screen").classList.remove("active");
     document.getElementById("end-screen").classList.add("active");
 
-    // Google Form Response URL ของอาจารย์
-    const FORM_URL = "[https://docs.google.com/forms/d/e/1FAIpQLSdSFXbV7dI-8hHw5cvJPX2fO-p00BGPnuzuNqh2KJox-jjgDg/formResponse]";
+    // Google Form Response URL ของอาจารย์ (แก้ไขเอา [ ] ออกแล้ว)
+    const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdSFXbV7dI-8hHw5cvJPX2fO-p00BGPnuzuNqh2KJox-jjgDg/formResponse";
     
     const formData = new FormData();
     formData.append("entry.366113943", studentId);   // ส่งรหัสนิสิต
